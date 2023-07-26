@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON Form Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="head-container">
+                <div class="logo">
+                <h1>JSON Validator</h1>  
+              </div>
+                
+               
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="left-section">
+
+                <nav>
+                    Enter JSON data :
+                </nav>
+                
+                <form id="jsonForm" onsubmit="submitJsonForm(event)">
+                    <label for="jsonData"></label>
+                    <textarea id="jsonData" rows="10" cols="50" required></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="right-section">
+
+                <div class="level-3">
+                    <nav>
+                        Level 3 Editable JSON Output:
+                    </nav>
+                    
+                    <div id="jsonOutputLevel3"></div>
+                </div>
+                <div class="level-2">
+                    <nav>
+                        Level 2 JSON Output:
+                    </nav>
+                    
+                    <pre id="jsonOutputLevel2"></pre>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
